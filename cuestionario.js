@@ -188,7 +188,13 @@ function mostrarResultado() {
     }
   });
   resultadoTest.innerHTML = 'Usted ha acertado ' + respuestasCorrectas + ' preguntas de un total de ' + preguntas.length;
-
+  
+  if(respuestasCorrectas < Math.round(preguntas.length*0.7)){
+      alert('Ánimo, sigue intentando');
+      location.href = 'https://fisiologiaunipamplona.blogspot.com/';
+     }else{
+       alert('Felicitaciones, aprobado');
+     }
 }
 
 
